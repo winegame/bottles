@@ -32,17 +32,17 @@ logging = Logger()
 class RepositoryManager:
     __repositories = {
         "components": {
-            "url": "https://repo.usebottles.com/components/",
+            "url": "https://bottles.winegame.net/components/",
             "index": "",
             "cls": ComponentRepo
         },
         "dependencies": {
-            "url": "https://repo.usebottles.com/dependencies/",
+            "url": "https://bottles.winegame.net/dependencies/",
             "index": "",
             "cls": DependencyRepo
         },
         "installers": {
-            "url": "https://repo.usebottles.com/programs/",
+            "url": "https://bottles.winegame.net/programs/",
             "index": "",
             "cls": InstallerRepo
         }
