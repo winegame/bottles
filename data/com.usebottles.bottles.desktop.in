@@ -1,5 +1,11 @@
 [Desktop Entry]
-Name=Bottles
+Name=WineGame Bottles
+Name[zh_Hans]=葡萄瓶 (Bottles)
+Name[zh_CN]=葡萄瓶 (Bottles)
+Name[zh_SG]=葡萄瓶 (Bottles)
+Name[zh_Hant]=葡萄瓶 (Bottles)
+Name[zh_HK]=葡萄瓶 (Bottles)
+Name[zh_TW]=葡萄瓶 (Bottles)
 Comment=Easily manage wineprefix
 Icon=net.winegame.bottles
 Exec=bottles %u
