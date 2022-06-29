@@ -4,6 +4,7 @@ runtime: org.gnome.Platform
 base: org.winehq.Wine
 base-version: stable-21.08
 runtime-version: "42"
+separate-locales: false
 command: bottles
 
 finish-args:
