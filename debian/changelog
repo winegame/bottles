@@ -1,4 +1,11 @@
-com.usebottles.bottles (2022.6.28-brescia) precise; urgency=low
+net.winegame.bottles (2022.6.28-brescia) precise; urgency=low
+
+  * 服务器迁移到中国境内。
+  * 默认显示中文界面。
+
+ -- SwimmingTiger <hu60.cn@qq.com>  Sat, 21 May 2022 23:41:27 +0800
+
+net.winegame.bottles (2022.6.28-brescia) precise; urgency=low
 
   * Support for Steam runtimes (soldier, scout); if enabled, bottles with Proton use soldier while other runners use scout
   * Create Steam shortcuts directly from the program list; requires permission to the Steam path if Flatpak

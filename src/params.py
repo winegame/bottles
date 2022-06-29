@@ -1,7 +1,7 @@
 # Application details
 APP_NAME = "Bottles"
 APP_NAME_LOWER = APP_NAME.lower()
-APP_ID = "com.usebottles.bottles"
+APP_ID = "net.winegame.bottles"
 VERSION = "2022.6.28-brescia"
 VERSION_NUM = "2022.6.28-brescia"
 

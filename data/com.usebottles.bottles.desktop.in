@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Bottles
 Comment=Easily manage wineprefix
-Icon=com.usebottles.bottles
+Icon=net.winegame.bottles
 Exec=bottles %u
 Terminal=false
 Type=Application

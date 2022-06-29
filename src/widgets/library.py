@@ -57,7 +57,7 @@ class LibraryEntry(Gtk.Box):
         self.label_bottle.set_text(entry['bottle']['name'])
 
         if entry.get('icon'):
-            if entry['icon'] == "com.usebottles.bottles-program":
+            if entry['icon'] == "net.winegame.bottles-program":
                 self.img_icon.set_from_icon_name(entry['icon'])
                 self.img_icon.set_pixel_size(32)
             elif os.path.exists(entry['icon']):

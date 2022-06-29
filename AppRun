@@ -3,12 +3,12 @@ export APPDIR="$(dirname "$(readlink -f "$0")")"
 export PATH="$APPDIR/usr/bin/:$PATH"
 export LD_LIBRARY_PATH="$APPDIR/usr/lib:$PATH"
 export XDG_DATA_DIRS="$APPDIR/usr/share/:/usr/share/:$XDG_DATA_DIRS"
-export DESKTOP_FILE_PATH=$APPDIR/usr/share/applications/com.usebottles.bottles.desktop
-export ICON_FILE_PATH=$APPDIR/usr/share/icons/hicolor/scalable/apps/com.usebottles.bottles.svg
-export SYMBOLIC_ICON_FILE_PATH=$APPDIR/usr/share/icons/symbolic/scalable/apps/com.usebottles.bottles-symbolic.svg
+export DESKTOP_FILE_PATH=$APPDIR/usr/share/applications/net.winegame.bottles.desktop
+export ICON_FILE_PATH=$APPDIR/usr/share/icons/hicolor/scalable/apps/net.winegame.bottles.svg
+export SYMBOLIC_ICON_FILE_PATH=$APPDIR/usr/share/icons/symbolic/scalable/apps/net.winegame.bottles-symbolic.svg
 export INSTALLED_DESKTOP_FILE_PATH=~/.local/share/applications/bottles.desktop
-export INSTALLED_ICON_FILE_PATH=~/.local/share/icons/hicolor/scalable/apps/com.usebottles.bottles.svg
-export INSTALLED_SYMBOLIC_ICON_FILE_PATH=~/.local/share/icons/hicolor/symbolic/apps/com.usebottles.bottles-symbolic.svg
+export INSTALLED_ICON_FILE_PATH=~/.local/share/icons/hicolor/scalable/apps/net.winegame.bottles.svg
+export INSTALLED_SYMBOLIC_ICON_FILE_PATH=~/.local/share/icons/hicolor/symbolic/apps/net.winegame.bottles-symbolic.svg
 export G_MESSAGES_DEBUG="fatal"
 INSTALL_DESKTOP_FILE=false
 

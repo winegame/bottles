@@ -1,4 +1,4 @@
-id: com.usebottles.bottles
+id: net.winegame.bottles
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
 base: org.winehq.Wine

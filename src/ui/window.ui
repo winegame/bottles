@@ -67,7 +67,7 @@
         <property name="title" translatable="yes">Bottles</property>
         <property name="default-width">880</property>
         <property name="default-height">640</property>
-        <property name="icon-name">com.usebottles.bottles</property>
+        <property name="icon-name">net.winegame.bottles</property>
         <child>
             <object class="AdwToastOverlay" id="toasts">
                 <child>

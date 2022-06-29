@@ -168,7 +168,7 @@ class ManagerUtils:
     def extract_icon(config: dict, program_name: str, program_path: str) -> str:
         from bottles.backend.wine.winepath import WinePath
         winepath = WinePath(config)
-        icon = "com.usebottles.bottles-program"
+        icon = "net.winegame.bottles-program"
         bottle_icons_path = os.path.join(ManagerUtils.get_bottle_path(config), "icons")
 
         try:
@@ -211,11 +211,11 @@ class ManagerUtils:
 
         cmd_legacy = "bottles"
         cmd_cli = "bottles-cli"
-        icon = "com.usebottles.bottles-program"
+        icon = "net.winegame.bottles-program"
 
         if "FLATPAK_ID" in os.environ:
-            cmd_legacy = "flatpak run com.usebottles.bottles"
-            cmd_cli = "flatpak run --command=bottles-cli com.usebottles.bottles"
+            cmd_legacy = "flatpak run net.winegame.bottles"
+            cmd_cli = "flatpak run --command=bottles-cli net.winegame.bottles"
 
         if not skip_icon and not custom_icon:
             icon = ManagerUtils.extract_icon(config, program.get("name"), program.get("path"))
@@ -265,7 +265,7 @@ class ManagerUtils:
         from gi.repository import Gio, Xdp
 
         portal = Xdp.Portal()
-        if icon == "com.usebottles.bottles-program":
+        if icon == "net.winegame.bottles-program":
             _icon = Gio.BytesIcon.new(icon.encode("utf-8"))
         else:
             _icon = Gio.FileIcon.new(Gio.File.new_for_path(icon))
@@ -273,7 +273,7 @@ class ManagerUtils:
         token = portal.dynamic_launcher_request_install_token(program.get("name"), icon_v)
         portal.dynamic_launcher_install(
             token,
-            f"com.usebottles.bottles.{config.get('Name')}.{program.get('name')}.{str(uuid.uuid4())}.desktop",
+            f"net.winegame.bottles.{config.get('Name')}.{program.get('name')}.{str(uuid.uuid4())}.desktop",
             """
             [Desktop Entry]
             Exec={}

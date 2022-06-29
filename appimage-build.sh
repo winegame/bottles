@@ -79,7 +79,7 @@ print_execution "rm appdir/usr/local/share/bottles/bottles/meson.build"
 
 if [[ -v NO_ENVIRONMENT ]]; then
 	title "Copying appdata"
-	print_execution "cp -a ../data/com.usebottles.bottles.appdata.xml.in appdir/usr/share/metainfo/com.usebottles.bottles.appdata.xml"
+	print_execution "cp -a ../data/net.winegame.bottles.appdata.xml.in appdir/usr/share/metainfo/net.winegame.bottles.appdata.xml"
 fi
 
 title "Compiling and installing translations"
@@ -94,11 +94,11 @@ print_execution "cp -a ../data/icons appdir/usr/share"
 print_execution "mv appdir/usr/share/icons/symbolic/scalable/apps/*.svg appdir/usr/share/icons/hicolor/scalable/apps/"
 
 title "Copying and compiling gschema"
-print_execution "cp ../data/com.usebottles.bottles.gschema.xml appdir/usr/share/glib-2.0/schemas/com.usebottles.bottles.gschema.xml"
+print_execution "cp ../data/net.winegame.bottles.gschema.xml appdir/usr/share/glib-2.0/schemas/net.winegame.bottles.gschema.xml"
 print_execution "glib-compile-schemas appdir/usr/share/glib-2.0/schemas/"
 
 title "Copying Desktop file"
-print_execution "cp data/com.usebottles.bottles.desktop appdir/usr/share/applications/"
+print_execution "cp data/net.winegame.bottles.desktop appdir/usr/share/applications/"
 
 title "Copying AppRun file"
 print_execution "cp -a ../AppRun appdir/AppRun"

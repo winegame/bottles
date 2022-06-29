@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-  input: 'com.usebottles.bottles.desktop.in',
-  output: 'com.usebottles.bottles.desktop',
+  input: 'net.winegame.bottles.desktop.in',
+  output: 'net.winegame.bottles.desktop',
   type: 'desktop',
   po_dir: '../po',
   install: true,
@@ -15,8 +15,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'com.usebottles.bottles.appdata.xml.in',
-  output: 'com.usebottles.bottles.appdata.xml',
+  input: 'net.winegame.bottles.appdata.xml.in',
+  output: 'net.winegame.bottles.appdata.xml',
   po_dir: '../po',
   install: true,
   install_dir: join_paths(get_option('datadir'), 'metainfo')
@@ -29,7 +29,7 @@ if appstream_util.found()
   )
 endif
 
-install_data('com.usebottles.bottles.gschema.xml',
+install_data('net.winegame.bottles.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 
@@ -41,17 +41,17 @@ if compile_schemas.found()
 endif
 
 install_data(
-    join_paths('icons/hicolor/scalable/apps/com.usebottles.bottles.svg'),
+    join_paths('icons/hicolor/scalable/apps/net.winegame.bottles.svg'),
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'icons/hicolor/scalable/apps')
 )
 
 install_data(
-    join_paths('icons/symbolic/scalable/apps/com.usebottles.bottles-symbolic.svg'),
+    join_paths('icons/symbolic/scalable/apps/net.winegame.bottles-symbolic.svg'),
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'icons/hicolor/symbolic/apps')
 )
 
 install_data(
-    join_paths('icons/hicolor/scalable/apps/com.usebottles.bottles-program.svg'),
+    join_paths('icons/hicolor/scalable/apps/net.winegame.bottles-program.svg'),
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'icons/hicolor/scalable/apps')
 )
 

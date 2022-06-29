@@ -3,7 +3,7 @@ version: git
 summary: Bottles
 description: "Easily run Windows software on Linux with 🍷 Bottles!"
 license: GPL-3.0+
-icon: data/icons/hicolor/scalable/apps/com.usebottles.bottles.svg
+icon: data/icons/hicolor/scalable/apps/net.winegame.bottles.svg
 
 base: core20
 confinement: strict
@@ -23,7 +23,7 @@ parts:
     override-pull: |
       snapcraftctl pull
       sed -i -e 's|@PYTHON@|/usr/bin/python3|g' src/bottles.in
-      sed -i.bak -e 's|Icon=com.usebottles.bottles|Icon=/usr/share/icons/hicolor/scalable/apps/com.usebottles.bottles.svg|g' data/com.usebottles.bottles.desktop.in
+      sed -i.bak -e 's|Icon=net.winegame.bottles|Icon=/usr/share/icons/hicolor/scalable/apps/net.winegame.bottles.svg|g' data/net.winegame.bottles.desktop.in
     build-packages:
       - python3
       - python3-distutils
@@ -78,7 +78,7 @@ parts:
 apps:
   bottles:
     command: usr/bin/bottles
-    desktop: usr/share/applications/com.usebottles.bottles.desktop
+    desktop: usr/share/applications/net.winegame.bottles.desktop
     extensions: [gnome-3-38]
     environment:
         PYTHONPATH: ${PYTHONPATH}:$SNAP/usr/lib/python3/dist-packages
@@ -99,4 +99,4 @@ slots:
   dbus-bottles:
     interface: dbus
     bus: session
-    name: com.usebottles.bottles
+    name: net.winegame.bottles

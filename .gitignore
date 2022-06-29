@@ -57,7 +57,7 @@ packagecache
 # Ignore files generated during build
 *debian/files
 *debian/.*
-*debian/com.usebottles.bottles*
+*debian/net.winegame.bottles*
 *obj-x86_64-linux-gnu
 
 # Ignore flatpak build dirs

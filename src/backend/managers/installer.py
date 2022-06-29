@@ -524,7 +524,7 @@ class InstallerManager:
             _layer_launcher = {
                 "uuid": self.__layer.get_uuid(),
                 "name": manifest["Name"],
-                "icon": "com.usebottles.bottles-program",
+                "icon": "net.winegame.bottles-program",
                 "exec_path": _path,
                 "exec_name": executable["file"],
                 "exec_args": executable.get("arguments", ""),

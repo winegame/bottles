@@ -36,14 +36,14 @@ script:
   - mv AppDir/usr/share/icons/symbolic/scalable/apps/*.svg AppDir/usr/share/icons/hicolor/scalable/apps/
   
   # Copying Desktop file
-  - cp build/data/com.usebottles.bottles.desktop AppDir/usr/share/applications/
+  - cp build/data/net.winegame.bottles.desktop AppDir/usr/share/applications/
   
   # Copying and compiling gschema
-  - cp data/com.usebottles.bottles.gschema.xml AppDir/usr/share/glib-2.0/schemas/com.usebottles.bottles.gschema.xml
+  - cp data/net.winegame.bottles.gschema.xml AppDir/usr/share/glib-2.0/schemas/net.winegame.bottles.gschema.xml
   - glib-compile-schemas AppDir/usr/share/glib-2.0/schemas/
   
   # Copying appdata
-  - cp -a data/com.usebottles.bottles.appdata.xml.in AppDir/usr/share/metainfo/com.usebottles.bottles.appdata.xml
+  - cp -a data/net.winegame.bottles.appdata.xml.in AppDir/usr/share/metainfo/net.winegame.bottles.appdata.xml
   
   # Set bash as default shell
   - mkdir -p AppDir/bin
@@ -74,9 +74,9 @@ AppDir:
   path: ./AppDir
 
   app_info:
-    id: com.usebottles.bottles
+    id: net.winegame.bottles
     name: Bottles
-    icon: com.usebottles.bottles
+    icon: net.winegame.bottles
     version: 2022.6.28-brescia
     
     # Set the python executable as entry point

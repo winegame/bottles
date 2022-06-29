@@ -50,7 +50,7 @@
                         </child>
                         <child>
                             <object class="AdwStatusPage" id="bottle_status">
-                                <property name="icon-name">com.usebottles.bottles-symbolic</property>
+                                <property name="icon-name">net.winegame.bottles-symbolic</property>
                                 <property name="title" translatable="yes">Bottles</property>
                                 <property name="description" translatable="yes">Start off by creating a Bottle.</property>
                                 <property name="hexpand">True</property>

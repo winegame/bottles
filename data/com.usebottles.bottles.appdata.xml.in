@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-    <id>com.usebottles.bottles.desktop</id>
+    <id>net.winegame.bottles.desktop</id>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
     <name>Bottles</name>
@@ -78,7 +78,7 @@
             <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/11.png</image>
         </screenshot>
     </screenshots>
-    <translation type="gettext">com.usebottles.bottles</translation>
+    <translation type="gettext">net.winegame.bottles</translation>
     <content_rating type="oars-1.1"/>
     <url type="homepage">https://usebottles.com</url>
     <url type="bugtracker">https://github.com/bottlesdevs/Bottles/issues</url>

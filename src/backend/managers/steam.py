@@ -218,7 +218,7 @@ class SteamManager:
                 "name": _acf["AppState"]["name"],
                 "path": _path,
                 "folder": _folder,
-                "icon": "com.usebottles.bottles-program",
+                "icon": "net.winegame.bottles-program",
                 "dxvk": config["Parameters"]["dxvk"],
                 "vkd3d": config["Parameters"]["vkd3d"],
                 "dxvk_nvapi": config["Parameters"]["dxvk_nvapi"],
